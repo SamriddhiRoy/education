@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>PlaceInsta</title>
+
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet" />
+</head>
+
+<body>
+	<!---start header---->
+	<header>
+		<a href="index.html" class="logo">
+			<img src="img/logo.png" />
+		</a>
+
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="podcast.html">Podcast</a></li>
+			<li><a href="allCourses.html">Courses</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="#">Communities</a></li>
+			<!-- -->
+		</ul>
+
+		<div class="header-icons">
+			<a href="#"><i class="bx bx-user"></i></a>
+			<a href="#"><i class="bx bx-heart"></i></a>
+			<a href="#"><i class="bx bx-cart"></i></a>
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+
+	<!---start home section---->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h6>Complete Placement Preparation</h6>
+			<h1>PlaceInsta: An E-Learning Platform</h1>
+			<p>
+				Aptitude, Logical Reasoning, Verbal Ability, Coding, Computer Science
+				Subjects, Resume & Interview Training is covered in the course
+			</p>
+			<!-- <div class="latter">
+				<form>
+					<input type="email" placeholder="Write Your Email" required>
+					<input type="submit" value="Let's Start" required>
+				</form>
+			</div> -->
+		</div>
+
+		<div class="home-img">
+			<img src="img/home.png" />
+		</div>
+	</section>
+
+	<!---start container section---->
+	<section class="container">
+		<div class="container-box">
+			<div class="container-img">
+				<img src="img/con1.svg" />
+			</div>
+			<div class="container-text">
+				<h4></h4>
+				<p>Interactive classes by industry experts</p>
+			</div>
+		</div>
+
+		<div class="container-box">
+			<div class="container-img">
+				<img src="img/con2.svg" />
+			</div>
+			<div class="container-text">
+				<h4></h4>
+				<p>Company Specific Preparation</p>
+			</div>
+		</div>
+
+		<div class="container-box">
+			<div class="container-img">
+				<img src="img/con3.svg" />
+			</div>
+			<div class="container-text">
+				<h4></h4>
+				<p>Resume building & Interview preparation</p>
+			</div>
+		</div>
+
+		<!-- <div class="container-box">
+			<div class="container-img">
+				<img src="img/con4.svg" />
+			</div>
+			<div class="container-text">
+				<h4></h4>
+				<p>Structured Curriculum</p>
+			</div>
+		</div> -->
+	</section>
+
+	<!---start categories section---->
+	<section class="categories" id="categories">
+		<div class="center-text">
+			<h5>Content</h5>
+			<h2>Popular Courses</h2>
+		</div>
+
+		<div class="recommended-videos" id="videocontainer"></div>
+		<div class="main-btn">
+			<a href="allCourses.html" class="btn">All Courses</a>
+		</div>
+	</section>
+
+	<!---start course section---->
+	<!-- <section class="courses" id="courses">
+		<div class="center-text">
+			<h5>COURSES</h5>
+			<h2>Explore Popular Courses</h2>
+		</div>
+
+		<div class="courses-content">
+			
+			<div class="row">
+				<img src="img/course4.jpg">
+				<div class="courses-text">
+					<h5>Rs 1499</h5>
+					<h3>APTITUDE MASTER COURSE</h3>
+					<h6>05 hours 15 minutes</h6>
+					<div class="rating">
+						<div class="star">
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+						</div>
+						<div class="review">
+							<p>{5 Reviews}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/course5.jpg">
+				<div class="courses-text">
+					<h5>Rs 999</h5>
+					<h3>TCS SUPERSET COURSE</h3>
+					<h6>04 hours 15 minutes</h6>
+					<div class="rating">
+						<div class="star">
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+						</div>
+						<div class="review">
+							<p>{5 Reviews}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/course1.jpg">
+				<div class="courses-text">
+					<h5>Rs 499</h5>
+					<h3>RESUME BUILDING</h3>
+					<h6>02 hours 15 minutes</h6>
+					<div class="rating">
+						<div class="star">
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+						</div>
+						<div class="review">
+							<p>{5 Reviews}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="main-btn">
+			<a href="/about.html" class="btn">Buy Now</a>
+		</div>
+	</section> -->
+
+	<!---start cta section---->
+	<section class="cta">
+		<div class="center-text">
+			<h5>Trusted By</h5>
+			<h2>500+ Leading Universities And Companies</h2>
+		</div>
+
+		<div class="cta-content">
+			<div class="cta-img">
+				<img src="img/cta1.png" />
+			</div>
+
+			<div class="cta-img">
+				<img src="img/cta2.png" />
+			</div>
+
+			<div class="cta-img">
+				<img src="img/cta3.png" />
+			</div>
+
+			<div class="cta-img">
+				<img src="img/cta4.png" />
+			</div>
+
+			<div class="cta-img">
+				<img src="img/cta5.png" />
+			</div>
+
+			<div class="cta-img">
+				<img src="img/cta6.png" />
+			</div>
+		</div>
+	</section>
+
+	<!---start about section---->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/about.png" />
+		</div>
+
+		<div class="about-text">
+			<h2>Want to share your knowledge? Join us a Mentor</h2>
+			<p>
+				High-definition video is video of higher resolution and quality than
+				standard-definition. While there is no standardized meaning for
+				high-definition, generally any video.
+			</p>
+			<h4>Best Courses</h4>
+			<h5>Top rated Instructors</h5>
+			<a href="/about.html" class="btn">Read More</a>
+		</div>
+	</section>
+
+	<!---start contact section---->
+	<section class="contact" id="contact">
+		<div class="main-contact">
+			<div class="contact-content">
+				<img src="img/logo.png" />
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Twitter</a></li>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="podcast.html">Podcast</a></li>
+				<li><a href="/allCourses">Courses</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="#Communities">Communities</a></li>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="#">Profile</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Register</a></li>
+				<li><a href="#">Instructor</a></li>
+				<li><a href="#">Dashboard</a></li>
+			</div>
+
+			<div class="contact-content">
+				<li>
+					<a href="#">San Francisco,<br />
+						California, CA 94108</a>
+				</li>
+				<li><a href="#">dreamslms@example.com</a></li>
+				<li><a href="#">01646895741</a></li>
+			</div>
+		</div>
+	</section>
+
+	<div class="last-text">
+		<p>© 2023 PlaceInsta. All rights reserved.</p>
+	</div>
+
+	<!---custom js link---->
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<script>
+		const apiKey = "AIzaSyBLBgv1qQcPij0nR9xS9IP5tm6dLjYdmLE"; // Replace with your YouTube Data API key
+		// const channelId = "UCA6yfpYhy5sWMjRGOT-OAIQ"; // Replace with the channel ID
+		// const apiKey = 'YOUR_API_KEY'; // Replace with your YouTube Data API key
+		const playlistIds = [
+			'PLMufDeLh5x2DVLPcfJGUxd_Yd9LXJZ3NK',
+			'PLMufDeLh5x2Dx9Ob6if7OEy8EzDxUXMTc',
+			'PLMufDeLh5x2CRcF2097zGzvKfA63pFOts',
+			'PLMufDeLh5x2A9s93QOKDtrj2zfNKkdoln',
+			// 'PLMufDeLh5x2Dp2CvZMJU8_dp-Jlwzc7_d',
+			// 'PLMufDeLh5x2BG8TOyI4gI9YYu0V6tF6A6',
+			// 'PLDzeHZWIZsTr3nwuTegHLa2qlI81QweYG',
+			// 'PLqleLpAMfxGCUpDRFUnLKeDrgBsPOwTQK',
+			// 'PLDzeHZWIZsTpukecmA2p5rhHM14bl2dHU',
+			// 'PLPIwNooIb9vgYGBaBDqufEfJC99oD3juf',
+			// 'PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA',
+			// 'PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop',
+			// 'PLu0W_9lII9agwh1XjRt242xIpHhPT2llg',
+		];
+
+		async function fetchPlaylists() {
+			try {
+				const playlistsData = await Promise.all(
+					playlistIds.map(async (playlistId) => {
+						const apiUrl = `https://www.googleapis.com/youtube/v3/playlists?part=snippet,contentDetails&id=${playlistId}&key=${apiKey}`;
+						const response = await fetch(apiUrl);
+						const data = await response.json();
+						return data.items[0]; // Assuming you want only the first item in each response
+					})
+				);
+
+				append(playlistsData);
+			} catch (error) {
+				console.error('Error fetching playlists:', error);
+			}
+		}
+
+		function append(data) {
+			let container = document.getElementById('videocontainer');
+
+			data.forEach(({ snippet, id }) => {
+				let img = snippet?.thumbnails?.high?.url;
+				let title = snippet.title;
+				let channelTitle = snippet.channelTitle;
+
+				let div = document.createElement('div');
+				div.className = 'video-card';
+				div.innerHTML = `
+        <div>
+            <img src="${img}" alt="${title}">
+        </div>
+        <div class="video-info">
+            <div class="video-title">${title}</div>
+            <div class="video-channel">${channelTitle}</div>
+        </div>
+    `;
+				let playlistId = { id, snippet };
+				div.addEventListener('click', function () {
+					localStorage.setItem('playlistId', JSON.stringify(playlistId));
+					window.location.href = 'ytlanding.html';
+				});
+
+				container.append(div);
+			});
+		}
+
+		fetchPlaylists();
+
+	</script>
+</body>
+
+</html>
