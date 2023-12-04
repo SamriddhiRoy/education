@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Signup</h2>
+    <form onsubmit="handleSubmit(event)">
+        <input id="nameInput" placeholder="name" />
+        <input id="emailInput" placeholder="email"/>
+        <input id="passwordInput" placeholder="password"/>
+        <input type="submit"/>
+    </form>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    async function handleSubmit(e){
+        e.preventDefault();
+
+        const name = document.getElementById('nameInput').value;
+        const email = document.getElementById('emailInput').value;
+        const password = document.getElementById('passwordInput').value;
+
+        try {
+            // Make an Axios POST request to your backend API
+            const response = await axios.post('http://localhost:9090/usersignup', {
+                name,
+                email,
+                password
+            });
+            alert("data storedin DB")
+
+            // Handle the response, maybe show a success message or redirect
+            console.log('Response:', response.data);
+        } catch (error) {
+            // Handle any errors
+            console.error('Error:', error);
+        }
+    }
+</script>
+</html>
